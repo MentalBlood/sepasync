@@ -12,7 +12,6 @@ if __name__ == '__main__':
 			'bs4',
 			'loguru',
 			'httpx',
-			'mutagen',
 			'python_version >= "3.10"'
 		],
 		keywords=['downloader'],
