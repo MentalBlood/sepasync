@@ -31,7 +31,7 @@ class Entry(Container):
 			if os.path.exists(file_path):
 				return
 
-		root = BeautifulSoup(await self.content(), features='lxml')
+		root = BeautifulSoup(await self.content(), 'html.parser')
 
 		text_node = root.find(
 			'div',

@@ -15,7 +15,7 @@ class Published(Container):
 	async def inside(self, *args, **kwargs):
 
 		text = await self.page()
-		entries_list = BeautifulSoup(text, features='lxml').find(
+		entries_list = BeautifulSoup(text, 'html.parser').find(
 			'div', {'id': 'content'}
 		).find(
 			'ul'
